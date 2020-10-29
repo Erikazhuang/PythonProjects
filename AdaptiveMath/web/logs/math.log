@@ -80,3 +80,15 @@ Traceback (most recent call last):
   File "c:\users\44792\appdata\local\programs\python\python38\lib\site-packages\flask\sessions.py", line 84, in __getitem__
     return super(SecureCookieSession, self).__getitem__(key)
 KeyError: 'testid'
+2020-10-29 09:44:12,974 INFO: create_app started. [in C:\Users\44792\Documents\PythonProjects\AdaptiveMath\web\app\__init__.py:51]
+2020-10-29 09:44:17,895 INFO: question 13 start 2020-10-29 09:44:17.895309 end time 2020-10-29 09:44:17.895309. [in C:\Users\44792\Documents\PythonProjects\AdaptiveMath\web\app\main\routes.py:126]
+2020-10-29 09:44:20,635 INFO: question 17 start 2020-10-29 09:44:20.635394 end time 2020-10-29 09:44:20.635394. [in C:\Users\44792\Documents\PythonProjects\AdaptiveMath\web\app\main\routes.py:126]
+2020-10-29 09:44:25,238 INFO: question 115 start 2020-10-29 09:44:25.238315 end time 2020-10-29 09:44:25.238315. [in C:\Users\44792\Documents\PythonProjects\AdaptiveMath\web\app\main\routes.py:126]
+2020-10-29 09:44:27,842 INFO: question 266 start 2020-10-29 09:44:27.842847 end time 2020-10-29 09:44:27.842847. [in C:\Users\44792\Documents\PythonProjects\AdaptiveMath\web\app\main\routes.py:126]
+2020-10-29 09:44:30,472 INFO: question 256 start 2020-10-29 09:44:30.472413 end time 2020-10-29 09:44:30.472413. [in C:\Users\44792\Documents\PythonProjects\AdaptiveMath\web\app\main\routes.py:126]
+2020-10-29 09:44:33,305 INFO: question 174 start 2020-10-29 09:44:33.305781 end time 2020-10-29 09:44:33.305781. [in C:\Users\44792\Documents\PythonProjects\AdaptiveMath\web\app\main\routes.py:126]
+2020-10-29 09:44:38,869 INFO: question 75 start 2020-10-29 09:44:38.869390 end time 2020-10-29 09:44:38.869390. [in C:\Users\44792\Documents\PythonProjects\AdaptiveMath\web\app\main\routes.py:126]
+2020-10-29 09:44:41,114 INFO: question 231 start 2020-10-29 09:44:41.114373 end time 2020-10-29 09:44:41.114373. [in C:\Users\44792\Documents\PythonProjects\AdaptiveMath\web\app\main\routes.py:126]
+2020-10-29 09:44:44,613 INFO: question 306 start 2020-10-29 09:44:44.613986 end time 2020-10-29 09:44:44.613986. [in C:\Users\44792\Documents\PythonProjects\AdaptiveMath\web\app\main\routes.py:126]
+2020-10-29 09:44:49,943 INFO: question 277 start 2020-10-29 09:44:49.943430 end time 2020-10-29 09:44:49.943430. [in C:\Users\44792\Documents\PythonProjects\AdaptiveMath\web\app\main\routes.py:126]
+2020-10-29 09:46:29,384 INFO: question 313 start 2020-10-29 09:46:29.384409 end time 2020-10-29 09:46:29.384409. [in C:\Users\44792\Documents\PythonProjects\AdaptiveMath\web\app\main\routes.py:126]
