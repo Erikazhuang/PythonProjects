@@ -1,0 +1,12 @@
+<h1>Please check the correct answer and explanation!</h1>
+{%  for record in mistakes %}
+<table class="table">
+    <tr valign="top">
+        <!--<td>question {{ record['questionid'] }} </td>-->
+        <td>question {{ record['question'] }} </td>
+        <td>your answer: {{record['response']}}</td>
+        <td>correct answer:{{ record['question'] }}{{record['answer']}}</td>
+        <td>explanation: {{record['explain']}}</td>
+    </tr>
+</table>
+{% endfor %}

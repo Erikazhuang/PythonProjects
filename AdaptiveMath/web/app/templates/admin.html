@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>Admin</h1>
+    {% if form %}
+    <form action="" method="post" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.file.label }}<br>
+            {{ form.file() }}<br>     
+        </p>
+        <p>
+            {{ form.targettable.label }}<br>
+            {{ form.targettable() }}<br>
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    {% endif %} 
+    {% for skill in skills %}
+    {% include '__skill.html' %}
+    {% endfor %}
+    {% if prev_url %}
+    <a href="{{prev_url}}">Previous page</a>
+    {% endif %}
+    {% if next_url %}
+    <a href="{{next_url}}">Next page</a>
+    {% endif %}
+{% endblock%}

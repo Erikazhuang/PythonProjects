@@ -1,0 +1,10 @@
+<h1>Well Done!</h1>
+{%  for record in corrects %}
+<table class="table table-striped">
+    <tr valign="top">
+       <!-- <td>question {{ record.questionid }} </td>-->
+        <td>{{record.question.question}}{{record.response}}</td>
+        <td>result: Correct</td>
+    </tr>
+</table>
+{% endfor %}

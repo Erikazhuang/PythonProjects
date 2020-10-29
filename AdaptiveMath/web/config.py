@@ -14,3 +14,9 @@ class Config(object):
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME') or 'erikazhuang@gmail.com'
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD') or '7791350184'
     ADMINS = ['erikazhuang@gmail.com']
+
+    UPLOAD_PATH = 'C:\\Users\\44792\\Documents\\PythonProjects\\adaptivemath\\web\\app\\upload\\'
+
+    ITEMS_PER_PAGE = 10
+
+    TOTAL_QUESTIONS_PER_TEST = 2

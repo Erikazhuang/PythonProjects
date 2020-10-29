@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Practice Test</h1>
+    {% for question in questions %}
+    <p>
+    {{ question.question }} answer: <b>{{ question.answer }}</b>
+    </p>
+    {% endfor %}
+    {% include '__question.html' %}
+{% endblock %}

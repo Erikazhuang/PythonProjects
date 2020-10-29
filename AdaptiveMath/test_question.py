@@ -26,3 +26,4 @@ def test_get_random_questions():
     qlist = question.get_random_questions(10)
     print(qlist)
     assert len(qlist) == 10
+

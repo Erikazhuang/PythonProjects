@@ -1,20 +1,24 @@
-<html>
-    <head>
-      {% if title %}
-      <title>{{ title }} - Microblog</title>
-      {% else %}
-      <title>Welcome to Microblog</title>
-      {% endif %}
-    </head>
-    <body>
-        <div>Microblog: 
-            <a href="{{ url_for('index') }}">Home</a>
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+    {% if title %}{{ title }} - Luna's Math Pro{% else %}Welcome to Luna's Math Pro{% endif %}
+{% endblock %}
+
+
+{% block navbar %}
+    <nav class="navbar navbar-default">
+        <div>Luna's Math Pro:             
+            <a href="{{ url_for('main.index') }}">Home</a>
 
             {% if current_user.is_anonymous %}
-            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('auth.login') }}">Login</a>
             {% else %}
-            <a href="{{ url_for('user', username=current_user.username) }}">Profile</a>
-            <a href="{{ url_for('logout') }}">Logout</a>
+            <a href="{{ url_for('main.user', username=current_user.username) }}">Profile</a>
+            <a href="{{ url_for('main.start_practice')}}">Start Practice</a>
+            <a href="{{ url_for('main.start_test')}}">Start Test</a>
+            <a href="{{ url_for('main.admin') }}">Admin</a>
+            <a href="{{ url_for('main.browse_skill') }}">Skills</a>
+            <a href="{{ url_for('auth.logout') }}">Logout</a>
             {% endif %}
         </div>
         <hr>
@@ -27,6 +31,11 @@
         </ul>
         {% endif %}
         {% endwith %}
-        {% block content %}{% endblock %}
-    </body>
-</html>
+    </nav>
+{% endblock %}
+{% block content %}
+    <div class="container">
+        {% block app_content %}{% endblock %}
+    </div>
+{% endblock %}
+ 
