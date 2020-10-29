@@ -1,0 +1,1 @@
+DBCONNECTIONSTRING = 'sqlite:///database/adapt_math.db'
